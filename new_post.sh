@@ -75,7 +75,7 @@ echo "Category: "$cat >> $FILE
 
 open_atom()
 {
-check_atom=$(which atomi > /dev/null 2>&1)
+check_atom=$(which atom > /dev/null 2>&1)
 val=$?
 if [[ $val -ne 0 ]] ; then
     echo "Atom is not installed" 
@@ -93,6 +93,7 @@ category
 generate
 open_atom
 }
+
 main()
 {
 echo -e "\e[32mLet's Create a New Post"
